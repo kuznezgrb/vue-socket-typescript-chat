@@ -1,13 +1,15 @@
 {
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
+    "components": "^0.1.0",
     "express": "^4.17.1",
     "socket.io": "^2.3.0",
     "typescript": "^3.7.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-property-decorator": "^8.4.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
