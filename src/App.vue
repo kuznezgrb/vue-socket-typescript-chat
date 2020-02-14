@@ -1,22 +1,17 @@
 <template>
   <div id="app">
-    <AppHeader msg="typescript initialization testing"/>
+    <AppHeader msg="typescript initialization testing" />
   </div>
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
-    import AppHeader from "./components/AppHeader.vue";
+import { Component, Vue } from 'vue-property-decorator';
+import AppHeader from './components/AppHeader.vue';
 
-    @Component({
-        components: {
-            AppHeader,
-        },
-    })
-    export default class App extends Vue {
-    }
+@Component({
+  components: {
+    AppHeader
+  }
+})
+export default class App extends Vue {}
 </script>
-
-<style scoped>
-
-</style>
