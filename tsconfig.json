@@ -2,15 +2,19 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "module": "commonjs",
+    "target": "esnext",
     "strict": true,
-    "target": "es5",
-    "sourceMap": true,
+    "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
     "baseUrl": ".",
+    "types": [
+      "jest"
+    ],
     "paths": {
       "@/*": [
         "src/*"
@@ -24,7 +28,11 @@
     ]
   },
   "include": [
-    "./src/**/*"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
   ],
   "exclude": [
     "node_modules"
