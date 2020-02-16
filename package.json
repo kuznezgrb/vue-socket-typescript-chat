@@ -5,15 +5,17 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@types/socket.io": "^2.1.4",
     "components": "^0.1.0",
     "express": "^4.17.1",
     "socket.io": "^2.3.0",
     "tslib": "^1.10.0",
+    "uws": "10.148.1",
     "vue": "^2.6.11",
-    "vue-property-decorator": "^8.4.0"
+    "vue-property-decorator": "^8.4.0",
+    "vue-socket.io": "^3.0.7"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
@@ -26,11 +28,12 @@
     "@vue/eslint-config-typescript": "^5.0.1",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.1.2",
     "lint-staged": "^9.5.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.19.1",
     "typescript": "~3.7.5"
   },
   "gitHooks": {
