@@ -27,7 +27,7 @@
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "ts-node": "^8.6.2",
-    "typescript": "~3.7.5",
+    "typescript": "~3.7.5"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
