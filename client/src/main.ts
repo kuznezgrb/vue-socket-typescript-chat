@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import VueSocketio from 'socket.io';
+import * as VueSocketio from 'socket.io-client';
 import App from './App.vue';
 
 Vue.config.productionTip = false;

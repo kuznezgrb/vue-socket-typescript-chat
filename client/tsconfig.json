@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "module": "commonjs",
-    "target": "esnext",
+    "target": "ES2015",
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
@@ -10,8 +10,11 @@
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": true,
+    "allowJs": true,
     "sourceMap": true,
-    "baseUrl": ".",
+    "baseUrl": "..",
     "types": [
       "jest"
     ],
@@ -28,13 +31,13 @@
     ]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
+    "client/src/**/*.ts",
+    "client/src/**/*.tsx",
+    "client/src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "../node_modules"
   ]
 }
