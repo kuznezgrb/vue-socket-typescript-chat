@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "../node_modules/.bin/parcel client/src/index.html",
-    "build": "../node_modules/.bin/parcel build client/src/index.html",
-    "lint": "../node_modules/.bin/vue-cli-service lint"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@types/cors": "^2.8.6",
