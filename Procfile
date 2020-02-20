@@ -1,2 +1,2 @@
-web: http-server client/dist/ -p $PORT
+web: node client/dist/server.js
 api: node server/dist/index.js
