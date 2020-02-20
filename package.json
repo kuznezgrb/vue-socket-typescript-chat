@@ -1,0 +1,13 @@
+{
+  "name": "app-letstalk",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./server/dist/index.js",
+    "postinstall": "cd server && yarn install && cd ../client && yarn install"
+  },
+  "engines": {
+    "node": "9.2.0",
+    "npm": "6.0.0"
+  }
+}
