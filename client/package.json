@@ -4,7 +4,7 @@
     "build": "parcel build src/index.html",
     "lint": "vue-cli-service lint",
     "start": "node server.js",
-    "postinstall": "parcel build src/index.html"
+    "postinstall": "npm install -S http-server"
   },
   "dependencies": {
     "@types/cors": "^2.8.6",
