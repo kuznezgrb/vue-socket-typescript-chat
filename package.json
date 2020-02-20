@@ -7,7 +7,7 @@
     "postinstall": "cd server && yarn install && cd ../client && yarn install"
   },
   "engines": {
-    "node": "9.2.0",
+    "node": "11.10.1",
     "npm": "6.0.0",
     "yarn": "1.19.1"
   }
