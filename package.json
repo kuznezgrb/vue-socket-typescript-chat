@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./server/dist/index.js",
+    "start": "node ./server/dist/server.js",
     "postinstall": "cd server && yarn install && cd ../client && yarn install"
   },
   "engines": {
-    "node": "11.10.1",
+    "node": "10.15.3",
     "npm": "6.0.0",
     "yarn": "1.19.1"
   }
