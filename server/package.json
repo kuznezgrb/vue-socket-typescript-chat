@@ -2,7 +2,7 @@
   "scripts": {
     "start": "parcel ./dist/index.js",
     "build": "parcel build ./src/index.ts --target=node",
-    "postinstall": "parcel build src/index.html"
+    "heroku-postbuild": "parcel build src/index.html"
   },
   "dependencies": {
     "@types/cors": "^2.8.6",
