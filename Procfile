@@ -1,2 +1,2 @@
-web: node client/dist/server.js
+web: yarn client-start
 api: node server/dist/index.js

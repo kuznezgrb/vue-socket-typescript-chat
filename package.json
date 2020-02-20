@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./server/dist/server.js",
+    "client-start": "cd client && yarn start",
     "heroku-postbuild": "cd server && yarn install && cd ../client && yarn install"
   },
   "engines": {
