@@ -4,7 +4,7 @@
     "build": "parcel build src/index.html",
     "lint": "vue-cli-service lint",
     "start": "node server.js",
-    "heroku-postbuild": "yarn run build"
+    "heroku-postbuild": "parcel build src/index.html"
   },
   "dependencies": {
     "@types/cors": "^2.8.6",
