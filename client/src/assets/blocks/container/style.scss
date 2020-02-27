@@ -1,0 +1,11 @@
+@import '../../mixins';
+
+.container {
+  margin: 0 auto;
+  padding: 0 .2rem;
+  width: calc(100vw - 3rem);
+
+  @media #{$min320} {
+
+  }
+}
