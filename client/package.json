@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "start": "node server.js",
-    "heroku-postbuild": "vue-cli-service build --dest dist"
+    "postinstall": "vue-cli-service build --dest dist"
   },
   "dependencies": {
     "@mdi/font": "^3.6.95",
