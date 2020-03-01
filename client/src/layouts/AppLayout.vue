@@ -42,7 +42,9 @@ export default Vue.extend({
   --color-font-menu: #cac4e3;
   --color-link: #524bfc;
   --color-dark-base: #5249ff;
-  --color-background-light: rgba(247, 247, 247, 0.5);
+  --color-grey: #c3c3cc;
+  --color-border-grey: #e1e3e5;
+  --color-background-light: rgba(247, 247, 247, 1);
 
   --transition-ease: all 0.3s;
   --transition-medium: all 0.7s;
