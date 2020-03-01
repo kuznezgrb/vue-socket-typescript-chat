@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import AppLayout from "./views/AppLayout.vue";
+import AppLayout from "./layouts/AppLayout.vue";
 import socket from "socket.io-client";
 
 export default Vue.extend({
