@@ -28,6 +28,7 @@ export default Vue.extend({
 
 <style lang="scss">
 @import "../assets/mixins";
+@import "../assets/fonts/style.css";
 
 *,
 *:before,
@@ -42,18 +43,23 @@ export default Vue.extend({
   --color-link: #524bfc;
   --color-dark-base: #5249ff;
   --color-background-light: rgba(247, 247, 247, 0.5);
-  --font-default: "PT Sans";
 
   --transition-ease: all 0.3s;
   --transition-medium: all 0.7s;
   --transition-slow: all 1.2s;
 
-  --sidebar-left-width: 26rem;
+  --sidebar-left-width: 45.5rem;
   --sidebar-padding-left: 5rem;
+
+  --font-helvetica: "Helvetica Neue";
+  --font-gotham: "Gotham Pro Medium";
+  --font-gotham-light: "Gotham Pro Light";
 }
 
 html {
   font-size: 5px;
+  font-family: var(--font-helvetica);
+
   @media #{$min768} {
     font-size: 10px;
   }
