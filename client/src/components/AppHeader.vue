@@ -1,5 +1,5 @@
 <template>
-  <div class="header__container">Header</div>
+  <div class="header__container">LetsTalk</div>
 </template>
 
 <script lang="ts">
@@ -12,6 +12,8 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .header {
   &__container {
+    font-weight: 700;
+    font-size: 2.8rem;
     background: #ffffff;
     padding-left: calc(var(--sidebar-left-width) + var(--sidebar-padding-left));
   }
