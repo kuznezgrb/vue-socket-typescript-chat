@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Gotham Pro Medium';
+  src: url('/gotham_cyrillic/GothaProMed.otf') format('opentype');
+
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Light';
+  src: url('/gotham_cyrillic/GothaProLig.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/helvetica_neue/HelveticaNeueCyr-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
