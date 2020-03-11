@@ -5,17 +5,17 @@
         <div class="header__title">LetsTalk</div>
       </div>
       <div class="header__row-item">
-        <div class="button button__attachment">
-          <v-icon
-            large="true"
-            class="mdi mdi-attachment button__icon icon--white"
-          />
-        </div>
+        <ButtonBase
+          icon-class="mdi mdi-attachment button__icon icon--white"
+          btn-class="button__attachment"
+        />
       </div>
       <div class="header__row-item">
-        <div class="button button--clear button__settings">
-          <v-icon large="true" class="mdi mdi-settings button__icon" />
-        </div>
+        <ButtonBase
+          icon-class="mdi mdi-settings"
+          btn-class="button--clear button__settings"
+          :items="items"
+        />
       </div>
     </div>
   </div>
@@ -23,8 +23,22 @@
 
 <script lang="ts">
 import Vue from "vue";
+import ButtonBase from "@/components/BaseUI/ButtonBase.vue";
 export default Vue.extend({
-  name: "AppHeader"
+  name: "AppHeader",
+  components: { ButtonBase },
+  data() {
+    return {
+      items: [
+        {
+          name: "Account"
+        },
+        {
+          name: "Language"
+        }
+      ]
+    };
+  }
 });
 </script>
 
@@ -34,7 +48,6 @@ export default Vue.extend({
     font-weight: 700;
     font-size: 2.8rem;
     background: #ffffff;
-    padding-left: calc(var(--sidebar-left-width) + var(--sidebar-padding-left));
   }
   &__container {
     padding: 3rem 3.5rem;
@@ -54,28 +67,6 @@ export default Vue.extend({
       border-radius: 0.3rem;
       margin: 0 2rem;
     }
-  }
-}
-
-.button {
-  cursor: pointer;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 100%;
-  background: var(--color-grey);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &__icon {
-    font-size: 3.6rem;
-  }
-  .icon {
-    &--white {
-      color: white;
-    }
-  }
-  &--clear {
-    background: none;
   }
 }
 </style>
