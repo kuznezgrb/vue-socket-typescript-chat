@@ -2,7 +2,7 @@ import { createServer, Server } from 'http';
 import express from "express";
 import SocketIO from "socket.io";
 import cors from "cors";
-import { MessageModel } from "./model";
+import { MessageModel, UserModel } from "./model";
 
 export class ChatServer {
   public static readonly PORT:number = 3000;
@@ -10,6 +10,7 @@ export class ChatServer {
   private server: Server;
   private io: SocketIO.Server;
   private port: string | number;
+  private users: object[] = [];
 
   constructor() {
     this.createApp();
@@ -47,9 +48,18 @@ export class ChatServer {
         console.log('[server](message): %s', JSON.stringify(m));
         this.io.emit('message', m);
       });
-
+      socket.on('user_joined', (u: UserModel) => {
+        const user: UserModel = Object.assign({}, u);
+        user.socketId = socket.id;
+        this.users.push(user);
+        console.log('[server](joined): %s', user.name);
+        this.io.emit('user_joined', u);
+      });
       socket.on('disconnect', () => {
-        console.log('Client disconnected');
+        const disonnectedUser: UserModel = this.users.find(o => o.socketId === socket.id);
+        console.log(this.users);
+        console.log(disonnectedUser.name);
+        this.io.emit('user_disconnected', disonnectedUser);
       });
     });
   }

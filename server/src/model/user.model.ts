@@ -1,3 +1,3 @@
 export class UserModel {
-  constructor(private name: string) {}
+  constructor(public name: string, public id: number, public socketId: string) {}
 }
