@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./server/dist/server.js",
     "client-start": "node ./client/server.js",
-    "heroku-postbuild": "cd ./client && yarn install"
+    "heroku-postbuild": "cd server && yarn install && cd ../client && yarn install"
   },
   "engines": {
     "node": "10.15.3",
