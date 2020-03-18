@@ -46,8 +46,8 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .button {
   cursor: pointer;
-  width: 5rem;
-  height: 5rem;
+  width: 2.8rem;
+  height: 2.8rem;
   border-radius: 100%;
   background: var(--color-grey);
   display: flex;
@@ -55,7 +55,7 @@ export default Vue.extend({
   justify-content: center;
 
   &__icon {
-    font-size: 3.6rem;
+    font-size: 2rem;
   }
 
   .icon {
@@ -71,7 +71,6 @@ export default Vue.extend({
 .dropdown {
   &__item {
     font-family: var(--font-helvetica);
-    font-size: 1.6rem;
   }
 }
 </style>

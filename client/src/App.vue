@@ -5,7 +5,9 @@
 <script lang="ts">
 import Vue from "vue";
 import AppLayout from "./layouts/AppLayout.vue";
-import socket from "socket.io-client";
+import io from "socket.io-client";
+
+Vue.prototype.$socket = io("http://localhost:3000");
 
 export default Vue.extend({
   name: "App",

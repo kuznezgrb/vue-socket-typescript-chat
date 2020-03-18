@@ -19,8 +19,14 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .icon {
+  &__wrapper {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
   &__img {
-    width: 4rem;
+    width: 2.4rem;
     border-radius: 100%;
   }
 }

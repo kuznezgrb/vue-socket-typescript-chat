@@ -43,14 +43,16 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+@import "../../src/assets/mixins";
+
 .header {
   &__wrapper {
     font-weight: 700;
-    font-size: 2.8rem;
+    font-size: var(--size-h1);
     background: #ffffff;
   }
   &__container {
-    padding: 3rem 3.5rem;
+    padding: 1.6rem 2rem;
     display: flex;
     justify-content: space-between;
   }
@@ -60,12 +62,12 @@ export default Vue.extend({
 
     &:after {
       content: "";
-      width: 0.2rem;
-      height: 4rem;
+      width: 0.15rem;
+      height: 2.3rem;
       display: flex;
       background: var(--color-border-grey);
       border-radius: 0.3rem;
-      margin: 0 2rem;
+      margin: 0 1rem;
     }
   }
 }
