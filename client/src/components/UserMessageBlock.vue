@@ -33,7 +33,7 @@ import ChatInformationBlock from "@/components/ChatInformationBlock.vue";
 
 export default Vue.extend({
   name: "UserMessageBlock",
-  components: {ChatInformationBlock, UserIcon },
+  components: { ChatInformationBlock, UserIcon },
   computed: {
     userIcon() {
       return (

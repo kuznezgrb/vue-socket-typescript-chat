@@ -1,5 +1,4 @@
 import { Getters, Mutations, Actions, Module } from "vuex-smart-module";
-import { User } from "@/models/user";
 import { Message } from "@/models/message";
 
 class MessagesState {

@@ -4,6 +4,6 @@ import { Action } from "./action";
 export interface Message {
   from?: User;
   date: object;
-  content?: any;
+  content?: string;
   action?: Action;
 }

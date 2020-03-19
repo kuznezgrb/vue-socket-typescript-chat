@@ -17,7 +17,6 @@ import ChatArea from "@/components/ChatArea.vue";
 import AppHeader from "@/components/AppHeader.vue";
 import UserStore from "@/store/userStore";
 import { User } from "@/models/user";
-import { UserModel } from "../../../server/src/model";
 
 require("../assets/blocks");
 export default Vue.extend({
@@ -40,9 +39,9 @@ export default Vue.extend({
     ...UserStore.mapMutations(["updateUserData"]),
     updateUser(username: string) {
       console.log(username.length);
-      if(username.length < 2) {
+      if (username.length < 2) {
         return false;
-      };
+      }
       const data: User = {
         id: this.getRandomId(),
         name: username
