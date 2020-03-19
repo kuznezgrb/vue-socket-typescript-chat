@@ -5,7 +5,7 @@ import cors from "cors";
 import { MessageModel, UserModel } from "./model";
 
 export class ChatServer {
-  public static readonly PORT:number = 3000;
+  public static readonly PORT:number = 8000;
   private app: express.Application;
   private server: Server;
   private io: SocketIO.Server;

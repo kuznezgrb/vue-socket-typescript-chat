@@ -63,5 +63,6 @@
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "proxy": "http://server:8000"
 }

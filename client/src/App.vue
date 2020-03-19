@@ -7,8 +7,7 @@ import Vue from "vue";
 import AppLayout from "./layouts/AppLayout.vue";
 import io from "socket.io-client";
 
-Vue.prototype.$socket = io("http://localhost:3000");
-
+Vue.prototype.$socket = io("http://localhost:8000");
 export default Vue.extend({
   name: "App",
   components: {
