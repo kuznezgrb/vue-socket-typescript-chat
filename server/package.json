@@ -1,7 +1,8 @@
 {
   "scripts": {
     "start": "node ./dist/index.js",
-    "build": "parcel build ./src/index.ts --target=node"
+    "build": "parcel build ./src/index.ts --target=node",
+    "postinstall": "parcel build ./src/index.ts --target=node"
   },
   "dependencies": {
     "@types/cors": "^2.8.6",
