@@ -38,7 +38,6 @@ export default Vue.extend({
   methods: {
     ...UserStore.mapMutations(["updateUserData"]),
     updateUser(username: string) {
-      console.log(username.length);
       if (username.length < 2) {
         return false;
       }
@@ -59,23 +58,6 @@ export default Vue.extend({
 
 <style lang="scss">
 @import "../assets/mixins";
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-html {
-  font-family: var(--font-helvetica);
-  position: relative;
-}
-
-.container {
-  &__app-container {
-    width: 100%;
-  }
-}
 
 .header {
   @media #{$min768} {

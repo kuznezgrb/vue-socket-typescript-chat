@@ -3,12 +3,21 @@
 
 html {
   font-size: 12px;
+  font-family: var(--font-helvetica);
+  position: relative;
   @media #{$min768} {
     font-size: 8px;
   }
   @media #{$min1366} {
     font-size: 16px;
   }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
